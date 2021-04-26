@@ -167,5 +167,3 @@ moderatör 808414360975704104
 /*
 supporter 816288370908856362
 */
-
-// token ODMyNTk4MTEzMTM5MTYzMjA3.YHmHaw.YLdEAMXmbjNvEVOs3xwz0_vnXIo tamam doğru
