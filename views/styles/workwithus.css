@@ -1,0 +1,151 @@
+@import "main.css";
+
+/* FORM */
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 520px;
+  margin: auto;
+}
+
+.formGroup {
+  position: relative;
+  margin: 45px 0;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  background: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 520px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before {
+  width: 520px;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 520px;
+}
+.bar:before {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: var(--blurple);
+  transition: 500ms ease all;
+}
+
+/*header .logo{
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.4s;
+}*/
+
+.general {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.general h1 {
+  font-size: 35px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.side {
+  text-align: center;
+  margin-top: 11%;
+}
+
+.side h1 {
+  font-size: 140px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  color: var(--blurple);
+  padding-bottom: 10px;
+}
+
+.side h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #Fff;
+  padding-bottom: 10px;
+}
+
+/* BUTTON */
+
+#arda {
+  float: right;
+  position: relative;
+  color: #fff;
+  background: var(--blurple);
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+#arda:hover {
+  transform: translateY(-1px);
+  color: #111;
+  box-shadow: 0px 4px 12px -4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+  .member {
+    width: 100%;
+  }
+}
+
+.inputGroup:nth-child(1) {
+  margin-top: 30%;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  margin-top: 10%;
+}

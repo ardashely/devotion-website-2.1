@@ -1,0 +1,92 @@
+.footer{
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	background: #111;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	z-index: 9;
+	color: #fff;
+	padding: 30px;
+}
+.footer h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+
+.footerLinks a{
+	text-decoration: none;
+	margin: 20px;
+	font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;
+	opacity: .5;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.footerLinks .colored{
+	color: var(--darker);
+	font-weight: 650;
+	opacity: 1;
+}
+
+.footerLinks a:hover{
+	transform: translateY(-2px);
+}
+
+
+.copyright{
+	opacity: .4;
+	font-size: 13px;
+	font-weight: 520;
+}
+
+.copyright span{
+	font-weight: 800;
+	color: var(--blurple);
+}
+
+.credits{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	background: #111;
+	color: #fff;
+	font-size: 11px;
+}
+
+.credits span{
+	color: var(--blurple);
+	font-weight: 700;
+}
+
+
+#back-to-top-btn{
+	display: none;
+	bottom: 20px;
+	right: 20px;
+	font-size: 26px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	color: var(--blurple);
+	cursor: pointer;
+	outline: none;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, color;
+	position: fixed;
+	z-index: 999;
+}
+
+#back-to-top-btn:hover{
+	color: var(--darker);
+}

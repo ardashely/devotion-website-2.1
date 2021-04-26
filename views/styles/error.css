@@ -1,0 +1,38 @@
+@import "main.css";
+
+.general {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.general h1 {
+  font-size: 35px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.side {
+  text-align: center;
+  margin-top: 11%;
+}
+
+.side h1 {
+  font-size: 140px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  color: var(--blurple);
+  padding-bottom: 10px;
+}
+
+.side h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #Fff;
+  padding-bottom: 10px;
+}

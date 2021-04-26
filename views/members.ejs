@@ -1,0 +1,56 @@
+<%- include("partials/ejs/_loader") -%>
+
+<title>Devotion | Team</title>
+<link rel="stylesheet" href="./styles/members.css">
+
+<%- include("partials/ejs/_banner") -%>
+	<div class="team">
+		<div class="inner">
+			<h1>Devotion Takımı</h1>
+
+			<div class="members">
+				<% founders.map((x) => { %>
+          <div class="member">
+            <a href="https://discord.com/users/<%= x.user.id %>"><img src="<%= x.user.displayAvatarURL({ dynamic: true, size: 2048 }) %>"></a>
+            <div class="name"><%= x.user.username %></div>
+            <div class="description admin" style="color: var(--founder);"><i style="margin-right: 4%;" class="fas fa-chess-king"></i><i style="margin-right: 2%;" class="fas fa-code"></i> Proje Sahibi</div>
+          </div>
+        <% }); %>
+
+				<% admins.map((x) => { %>
+          <div class="member">
+            <a href="https://discord.com/users/<%= x.user.id %>"><img src="<%= x.user.displayAvatarURL({ dynamic: true, size: 2048 }) %>"></a>
+            <div class="name"><%= x.user.username %></div>
+            <!-- Shely okuyacak! -->
+            <% if (x.user.id === "689056142055178314") { %>
+              <div class="description admin" style="color: var(--admin);"><i style="margin-right: 5%;" class="fas fa-tools"></i><i style="margin-right: 4%;" class="fas fa-code"></i><i style="margin-right: 2%;" class="fas fa-star"></i> Yönetici</div>
+            <% } else { %>
+              <div class="description admin" style="color: var(--admin);"><i style="margin-right: 2%;" class="fas fa-tools"></i> Yönetici</div>
+            <% } %>
+          </div>
+				<% }); %>
+
+				<% mods.map((x) => { %>
+          <div class="member">
+            <a href="https://discord.com/users/<%= x.user.id %>"><img src="<%= x.user.displayAvatarURL({ dynamic: true, size: 2048 }) %>"></a>
+            <div class="name"><%= x.user.username %></div>
+            <% if (x.user.id === "621404511218565121") { %>
+              <div class="description admin" style="color: var(--mod);"><i style="margin-right: 4%;" class="fas fa-hammer"></i><i style="margin-right: 2%;" class="fas fa-code"></i> Moderatör</div>
+            <% } else { %>
+              <div class="description admin" style="color: var(--mod);"><i style="margin-right: 2%;" class="fas fa-hammer"></i> Moderatör</div>
+            <% } %>
+          </div>
+		    <% }); %>
+
+				<div class="member">
+					<a href="https://discord.com/users/<%= revole.user.id %>"><img src="<%= revole.user.displayAvatarURL({ dynamic: true, size: 2048 }) %>"></a>
+					<div class="name"><%= revole.user.username %></div>
+					<div class="description admin" style="color: var(--developer);"><i style="margin-right: 2%;" class="fas fa-pen-nib"></i> Grafiker</div>
+				</div>
+		</div>
+	</div>
+</section>
+
+
+<%- include("partials/ejs/_navbar") -%>
+<%- include("partials/ejs/_footer") -%>

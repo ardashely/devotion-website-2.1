@@ -1,0 +1,20 @@
+<%- include("partials/ejs/_loader") -%>
+
+<title>Devotion | Error</title>
+<link rel="stylesheet" href="./styles/error.css">
+
+
+<%- include("partials/ejs/_banner") -%>
+	<div class="general">
+		<h1>Devotion Error</h1>
+	</div>
+
+	<div class="side">
+		<h1><%= statuscode %></h1>
+		<br>
+		<h2><%= message %></h2>
+	</div>
+</section>
+
+<%- include("partials/ejs/_navbar") -%>
+<%- include("partials/ejs/_footer") -%>

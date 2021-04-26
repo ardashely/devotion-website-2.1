@@ -1,0 +1,15 @@
+<div id="navigation">
+  <ul>
+    <li><a href="/" class="<%= url === "/" ? "colored" : "" %>" onclick="toggle()">Ana Sayfa</a></li>
+    <li><a href="/#about" class="<%= url === "/about" ? "colored" : "" %>" onclick="toggle()">Hakkımızda</a></li>
+    <li><a href="/members" class="<%= url === "/members" ? "colored" : "" %>" onclick="toggle()">Ekibimiz</a></li>
+    <li><a href="/partners" class="<%= url === "/partners" ? "colored" : "" %>" onclick="toggle()">Partnerler</a></li>
+    <li><a href="/workwithus" class="<%= url === "/workwithus" ? "colored" : "" %>" onclick="toggle()">Bizimle Çalış</a></li>
+    <li><a href="https://discord.gg/devotion" target="_blank">Discord</a></li>
+    <% if (!user) { %>
+      <li><a href="/login" style="color: #7289da">Giriş Yap</a></li>
+    <% } else { %>
+      <li><a href="/logout" style="color: #da7272">Çıkış Yap</a></li>
+    <% } %>
+  </ul>
+</div>

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url(../partials/css/navbar.css);
+@import url(../partials/css/banner.css);
+@import url(../partials/css/loader.css);
+@import url(../partials/css/footer.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* ======= ROOT =======*/
+
+:root {
+  --blurple: #e54757;
+  --darker: #e54757;
+  --darkblack: #1e2124;
+  --bg: #111;
+  --background: url(https://cdn.glitch.com/dc300192-60f4-46ee-a475-0a7f761b4cd2%2Fdevbanner.jpg?v=1619095919053);
+  
+  --founder: #e54757;
+  --admin: #7289da;
+  --mod: #b268f9;
+  --developer: #28a745;
+  --designer: #fff;
+  --partner: #eb6a5c;
+  --supporter: #2b8ffe;
+}
+
+.container {
+  max-width: 1245px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+::selection {
+  background: #e54752c0;
+  color: #fff;
+}
+
+#back-to-top-btn {
+  display: none;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: var(--blurple);
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+  position: fixed;
+  z-index: 999;
+}
+
+#back-to-top-btn:hover {
+  color: var(--darker);
+}

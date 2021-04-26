@@ -1,0 +1,133 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px;
+  z-index: 10000;
+  transition: 0.4s;
+}
+
+/* BEGIN TOGGLE */
+
+header #toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+header #toggle:before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+header #toggle:after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+/* END TOGGLE */
+
+/*header .logo{
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.4s;
+}*/
+
+header .logo img {
+  width: 65px;
+  position: relative;
+  height: 65px;
+  transition: 0.3s;
+}
+header .logo img:hover {
+  transform: scale(1.025);
+}
+
+.banner.active header #toggle:before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.banner.active header #toggle:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  box-shadow: 6px 0px 21px 1px rgba(9, 16, 1, 0.69);
+  min-height: 100vh;
+  padding: 100px;
+  background-color: #18191a;
+  background-size: cover;
+  align-items: center;
+  transition: 0.8s;
+  z-index: 8;
+}
+
+.banner:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to top, #111, transparent);
+}
+/*
+.banner .overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    z-index: -1;
+}*/
+
+.banner.active {
+  transform: translateX(-400px);
+}
+
+@media (max-width: 767px) {
+  header {
+    padding: 20px 50px;
+  }
+  .banner {
+    padding: 100px 50px 150px;
+  }
+  .banner:before {
+    height: 100px;
+  }
+  .banner h2 {
+    font-size: 1.8em;
+  }
+  .banner .content p,
+  .banner .content a {
+    font-size: 16px;
+  }
+  .banner.active {
+    transform: translateX(-250px);
+  }
+}
