@@ -61,7 +61,7 @@ textarea:focus ~ .bar:before {
   content: "";
   height: 2px;
   width: 0;
-  bottom: 0px;
+  bottom: 0;
   position: absolute;
   background: var(--blurple);
   transition: 500ms ease all;
@@ -132,7 +132,7 @@ textarea:focus ~ .bar:before {
 #arda:hover {
   transform: translateY(-1px);
   color: #111;
-  box-shadow: 0px 4px 12px -4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 600px) {

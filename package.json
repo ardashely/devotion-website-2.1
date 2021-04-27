@@ -4,25 +4,35 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "lint": "eslint \"**/*.js\" --fix --no-error-on-unmatched-pattern",
+    "format": "prettier --write \"**/**/*.js\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
     "discord": "^0.8.2",
     "discord.js": "^12.5.3",
     "ejs": "^3.1.6",
+    "eslint-config-airbnb": "^18.2.1",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "moment": "^2.29.1",
     "passport": "^0.4.1",
     "passport-discord": "^0.1.4",
     "session": "^0.1.0",
-    "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.5",
     "wio.db": "^4.0.20"
   },
   "engines": {
     "node": "12.x"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.2.1"
   }
 }

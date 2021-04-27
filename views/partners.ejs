@@ -4,33 +4,44 @@
 <link rel="stylesheet" href="./styles/members.css">
 
 <%- include("partials/ejs/_banner") -%>
-	<div class="team">
-		<div class="inner">
-			<h1>Devotion Partnerler</h1>
+<div class="team">
+    <div class="inner">
+        <h1>Devotion Partnerler</h1>
 
-			<div class="members">
-				<% supporters.map((x) => { %>
-          <div class="member">
-          <a href="https://discord.com/users/<%= x.user.id %>"><img src="<%= x.user.displayAvatarURL({ dynamic: true, size: 2048 }) %>"></a>
-          <div class="name"><%= x.user.username %></div>
-          <% if (x.user.id === "802903031158931486" || x.user.id === "657615176522137620") { %>
-            <div class="description admin" style="color: var(--supporter);"><i style="margin-right: 4%;" class="fas fa-heart"></i><i style="margin-right: 2%;" class="fas fa-code"></i> Destekçi</div>
-          <% } else { %>
-              <div class="description admin" style="color: var(--supporter);"><i style="margin-right: 4%;" class="fas fa-heart"></i> Destekçi</div>
-          <% } %>
+        <div class="members">
+            <% supporters.map((x) => { %>
+                <div class="member">
+                    <a href="https://discord.com/users/<%= x.user.id %>"><img
+                                src="<%= x.user.displayAvatarURL({dynamic: true, size: 2048}) %>"></a>
+                    <div class="name"><%= x.user.username %></div>
+                    <% if (x.user.id === "802903031158931486" || x.user.id === "657615176522137620") { %>
+                        <div class="description admin" style="color: var(--supporter);"><i style="margin-right: 4%;"
+                                                                                           class="fas fa-heart"></i><i
+                                    style="margin-right: 2%;" class="fas fa-code"></i> Destekçi
+                        </div>
+                    <% } else { %>
+                        <div class="description admin" style="color: var(--supporter);"><i style="margin-right: 4%;"
+                                                                                           class="fas fa-heart"></i>
+                            Destekçi
+                        </div>
+                    <% } %>
+                </div>
+            <% }); %>
+
+            <% partners.map((x) => { %>
+                <div class="member">
+                    <a href="https://discord.com/users/<%= x.user.id %>"><img
+                                src="<%= x.user.displayAvatarURL({dynamic: true, size: 2048}) %>"></a>
+                    <div class="name"><%= x.user.username %></div>
+                    <div class="description admin" style="color: var(--partner);"><i style="margin-right: 2%;"
+                                                                                     class="fas fa-hands-helping"></i>
+                        Partner
+                    </div>
+                </div>
+            <% }); %>
         </div>
-				<% }); %>
-        
-        <% partners.map((x) => { %>
-          <div class="member">
-            <a href="https://discord.com/users/<%= x.user.id %>"><img src="<%= x.user.displayAvatarURL({ dynamic: true, size: 2048 }) %>"></a>
-            <div class="name"><%= x.user.username %></div>
-            <div class="description admin" style="color: var(--partner);"><i style="margin-right: 2%;" class="fas fa-hands-helping"></i> Partner</div>
-          </div>
-        <% }); %>
-		</div>
-	</div>
-</section>
+    </div>
+</div>
 
 
 <%- include("partials/ejs/_navbar") -%>

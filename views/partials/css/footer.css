@@ -67,25 +67,6 @@
 }
 
 
-#back-to-top-btn{
-	display: none;
-	bottom: 20px;
-	right: 20px;
-	font-size: 26px;
-	width: 50px;
-	height: 50px;
-	background-color: #fff;
-	color: var(--blurple);
-	cursor: pointer;
-	outline: none;
-	border: 3px solid #fff;
-	border-radius: 50%;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
-	transition-property: background-color, color;
-	position: fixed;
-	z-index: 999;
-}
 
 #back-to-top-btn:hover{
 	color: var(--darker);

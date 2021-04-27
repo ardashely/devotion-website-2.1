@@ -63,7 +63,7 @@
 .first a:hover {
   transform: translateY(-1px);
   color: #111;
-  box-shadow: 0px 4px 12px -4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.5);
 }
 
 .p-t-30 {

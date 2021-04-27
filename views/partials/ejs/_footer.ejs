@@ -2,33 +2,34 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
 
 
- <div class="footer">
-    	<h2>Devotion Network</h2>
-    	<div class="footerLinks">
-    		<a href="/" class="<%= url === "/" ? "colored" : "" %>">Ana Sayfa</a>
+<div class="footer">
+    <h2>Devotion Network</h2>
+    <div class="footerLinks">
+        <a href="/" class="<%= url === "/" ? "colored" : "" %>">Ana Sayfa</a>
         <a href="/members" class="<%= url === "/members" ? "colored" : "" %>">Ekibimiz</a>
         <a href="/partners" class="<%= url === "/partners" ? "colored" : "" %>">Partner</a>
         <a href="/workwithus" class="<%= url === "/workwithus" ? "colored" : "" %>">Bizimle Çalış</a>
         <a href="https://discord.com/invite/devotion" target="_blank">Discord</a>
-    	</div>
-    	<p class="copyright">
-    		Tüm Hakları Saklıdır. <span>Devotion Network <i style="margin: 4px;" class="fas fa-heart"></i> Cem Kiraz ©</span>
-    	</p>
     </div>
-<p class="credits"><span><i style="color: #fff; margin-right: 0.5%;" class="fa fa-code"></i>Shely & Theark</p>
+    <p class="copyright">
+        Tüm Hakları Saklıdır. <span>Devotion Network <i style="margin: 4px;"
+                                                        class="fas fa-heart"></i> Cem Kiraz ©</span>
+    </p>
+</div>
+<p class="credits"><i style="color: #fff; margin-right: 0.5%;" class="fa fa-code"></i>Shely & Theark</p>
 
 <button id="back-to-top-btn"><i class="fa fa-angle-up"></i></button>
 
 <script>
-  function toggle() {
-    var home = document.getElementById('home');
-    var nav = document.getElementById('navigation');
-    home.classList.toggle('active');
-    nav.classList.toggle('active');
-  }
+    function toggle() {
+        const home = document.getElementById('home');
+        const nav = document.getElementById('navigation');
+        home.classList.toggle('active');
+        nav.classList.toggle('active');
+    }
 
-  $(window).on("load", function(){
-    $(".loader-wrapper").fadeOut("slow");
-  });
+    $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+    });
 </script>
 <script src="javascript/main.js"></script>

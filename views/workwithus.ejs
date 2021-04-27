@@ -4,30 +4,39 @@
 <link rel="stylesheet" href="./styles/workwithus.css">
 
 <%- include("partials/ejs/_banner") -%>
-  <div class="general">
+<div class="general">
     <h1>Bizimle Çalış</h1>
-  </div>
-  <div class="wrapper">
+</div>
+<div class="wrapper">
     <form method="POST" action="/basvuru">
-      <div class="inputGroup">
-        <div><input type="text" placeholder="Ad Soyad" autocomplete="off" name="name" required/><span class="highlight"></span><span class="bar"></span></div>
-        <div><input type="email" placeholder="E-posta Adresi" autocomplete="off" name="email" required/><span class="highlight"></span><span class="bar"></span></div>
-        <div><input type="text" placeholder="Doğum Tarihi" autocomplete="off" name="birthday" pattern="(\d{2})[\/\-\.](\d{2})[\/\-\.](\d{2,4})" required/><span class="highlight"></span><span class="bar"></span></div>
-        <div><input type="text" placeholder="Yaptığınız İşleri Özetleyin." autocomplete="off" name="jobs" required/><span class="highlight"></span><span class="bar"></span></div>
-        <div><textarea name="whyDevotion" rows="6" placeholder="Neden Devotion?" minlength="50" required></textarea><span class="highlight"></span><span class="bar"></span></div><br>
-        <div><textarea name="whyMe" rows="6" placeholder="Kendinizden Bahsedin." minlength="50" required></textarea><span class="highlight"></span><span class="bar"></span></div><br>
-        
-        <label style="color: white;">Seçiniz:</label>
-        <select name="position" style="background: none; color: white; height: 40px; position: relative;" required>
-          <option value="translator">Tercüman</option>
-          <option value="graphicer">Grafiker</option>
-          <option value="developer">Geliştirici</option>
-        </select>
-      </div>
-      <button id="arda" type="submit"><i class="fas fa-check" style="margin-right: 10px; font-size: 20px;"></i>Gönder</button>
+        <div class="inputGroup">
+            <div><input type="text" placeholder="Ad Soyad" autocomplete="off" name="name" required/><span
+                        class="highlight"></span><span class="bar"></span></div>
+            <div><input type="email" placeholder="E-posta Adresi" autocomplete="off" name="email" required/><span
+                        class="highlight"></span><span class="bar"></span></div>
+            <div><input type="text" placeholder="Doğum Tarihi" autocomplete="off" name="birthday"
+                        pattern="(\d{2})[\/\-\.](\d{2})[\/\-\.](\d{2,4})" required/><span class="highlight"></span><span
+                        class="bar"></span></div>
+            <div><input type="text" placeholder="Yaptığınız İşleri Özetleyin." autocomplete="off" name="jobs" required/><span
+                        class="highlight"></span><span class="bar"></span></div>
+            <div><textarea name="whyDevotion" rows="6" placeholder="Neden Devotion?" minlength="50" required></textarea><span
+                        class="highlight"></span><span class="bar"></span></div>
+            <br>
+            <div><textarea name="whyMe" rows="6" placeholder="Kendinizden Bahsedin." minlength="50" required></textarea><span
+                        class="highlight"></span><span class="bar"></span></div>
+            <br>
+
+            <label style="color: white;">Seçiniz:</label>
+            <select name="position" style="background: none; color: white; height: 40px; position: relative;" required>
+                <option value="translator">Tercüman</option>
+                <option value="graphicer">Grafiker</option>
+                <option value="developer">Geliştirici</option>
+            </select>
+        </div>
+        <button id="arda" type="submit"><i class="fas fa-check" style="margin-right: 10px; font-size: 20px;"></i>Gönder
+        </button>
     </form>
-  </div>
-</section>
+</div>
 
 <%- include("partials/ejs/_navbar") -%>
 <%- include("partials/ejs/_footer") -%>

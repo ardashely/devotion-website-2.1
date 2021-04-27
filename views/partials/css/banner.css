@@ -75,7 +75,7 @@ header .logo img:hover {
 .banner {
   position: relative;
   width: 100%;
-  box-shadow: 6px 0px 21px 1px rgba(9, 16, 1, 0.69);
+  box-shadow: 6px 0 21px 1px rgba(9, 16, 1, 0.69);
   min-height: 100vh;
   padding: 100px;
   background-color: #18191a;
